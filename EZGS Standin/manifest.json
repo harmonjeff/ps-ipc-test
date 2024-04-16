@@ -1,0 +1,53 @@
+{
+    "manifestVersion": 5,
+    "name": "EZGS Standin",
+    "version": "1.0.0",
+    "id": "ezgsStandin",
+    "main": "index.html",
+    "requiredPermissions": {
+        "launchProcess": {
+            "schemes": [
+              "https"
+            ]
+          }
+    },
+    "entrypoints": [
+        {
+            "type": "command",
+            "id": "addTwoLayers",
+            "label": {
+                "default": "Add Two Layers"
+            }
+        },
+        {
+            "type": "panel",
+            "id": "addTwoLayersPanel",
+            "label": {
+                "default": "EZGS Standin"
+            },
+            "minimumSize": {
+                "height": 100,
+                "width": 100
+            },
+            "maximumSize": {
+                "height": 3000,
+                "width": 3000
+            },
+            "preferredDockedSize": {
+                "height": 300,
+                "width": 200
+            },
+            "preferredFloatingSize": {
+                "height": 300,
+                "width": 200
+            }
+        }
+    ],
+    "host": {
+        "app": "PS",
+        "minVersion": "23.0.0",
+        "data": {
+            "apiVersion": 2
+        }
+    }
+}
